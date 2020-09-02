@@ -9,7 +9,7 @@ public class Rocket : MonoBehaviour
     //Declare your member variables (make sure that is the right name)
     Rigidbody rigidBody;
     AudioSource audioSource;
-    bool m_Play; //Play the music
+    //bool m_Play; //Play the music
 
     // Start is called before the first frame update
     void Start()
@@ -29,27 +29,29 @@ public class Rocket : MonoBehaviour
     void Update()
     {
         ProcessInput();
+        //RocketNoise();
     }
 
-    //private void RocketNoise()
-    //{
-    //    if (m_Play == true)//Check to see if you just set toggle to positive
-    //    {
-    //        audioSource.Play();//Play the audio you attach to the AudioSource component
-    //    }
-    //    if (m_Play == false)//Check if you just set the toggle to false
-    //    {
-    //        audioSource.Stop();//Stop the audio
-    //    }
-    //}
+    private void RocketNoiseOn()
+    {
+        if (!audioSource.isPlaying)//So it doesn't layer
+        {
+            audioSource.Play();//Play the audio you attach to the AudioSource component
+        }
+    }
 
     private void ProcessInput()
     {
         if (Input.GetKey(KeyCode.Space)) // can thrust while rotating
         {
             rigidBody.AddRelativeForce(Vector3.up);
-            audioSource.Play();
+            RocketNoiseOn();
         }
+        else
+        {
+            audioSource.Stop();//Stop the audio
+        }
+
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(Vector3.forward);
@@ -58,9 +60,6 @@ public class Rocket : MonoBehaviour
         {
             transform.Rotate(Vector3.back);
         }
-        else
-        {
-            audioSource.Stop();
-        }
+        
     }
 }

@@ -22,34 +22,33 @@ public class Rocket : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         //Ensure the toggle is set to true for the music to play at start-up
-        m_Play = true;
+        //m_Play = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         ProcessInput();
-        RocketNoise();
     }
 
-    private void RocketNoise()
-    {
-        if (m_Play == true)//Check to see if you just set toggle to positive
-        {
-            audioSource.Play();//Play the audio you attach to the AudioSource component
-        }
-        if (m_Play == false)//Check if you just set the toggle to false
-        {
-            audioSource.Stop();//Stop the audio
-        }
-    }
+    //private void RocketNoise()
+    //{
+    //    if (m_Play == true)//Check to see if you just set toggle to positive
+    //    {
+    //        audioSource.Play();//Play the audio you attach to the AudioSource component
+    //    }
+    //    if (m_Play == false)//Check if you just set the toggle to false
+    //    {
+    //        audioSource.Stop();//Stop the audio
+    //    }
+    //}
 
     private void ProcessInput()
     {
         if (Input.GetKey(KeyCode.Space)) // can thrust while rotating
         {
             rigidBody.AddRelativeForce(Vector3.up);
-            m_Play = true;
+            audioSource.Play();
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -61,7 +60,7 @@ public class Rocket : MonoBehaviour
         }
         else
         {
-            m_Play = false;
+            audioSource.Stop();
         }
     }
 }

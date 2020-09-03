@@ -20,16 +20,13 @@ public class Rocket : MonoBehaviour
         //update: you have also extracted the AudioSource component
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
-
-        //Ensure the toggle is set to true for the music to play at start-up
-        //m_Play = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        ProcessInput();
-        //RocketNoise();
+        Thrust();
+        Rotate();
     }
 
     private void RocketNoiseOn()
@@ -40,7 +37,7 @@ public class Rocket : MonoBehaviour
         }
     }
 
-    private void ProcessInput()
+    private void Thrust()
     {
         if (Input.GetKey(KeyCode.Space)) // can thrust while rotating
         {
@@ -51,15 +48,21 @@ public class Rocket : MonoBehaviour
         {
             audioSource.Stop();//Stop the audio
         }
+    }
 
+    private void Rotate()
+    {
+        rigidBody.freezeRotation = true; //take manual control of rotation
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(Vector3.forward);
         }
-        else if(Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(Vector3.back);
         }
-        
+        rigidBody.freezeRotation = false; //resume physics control
     }
+
+
 }

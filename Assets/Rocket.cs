@@ -29,6 +29,34 @@ public class Rocket : MonoBehaviour
         Rotate();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+                //do nothing
+                print("OK"); //todo remove
+                break;
+            case "Fuel":
+                print("Fuel");
+                break;
+            case "Damage":
+                print("Damage");
+                break;
+            default:
+                print("dead");
+                //kill player
+                break;
+        }
+        //foreach (ContactPoint contact in collision.contacts)
+        //{
+        //    Debug.DrawRay(contact.point, contact.normal, Color.white);
+        //}
+        //if (collision.relativeVelocity.magnitude > 2)
+        //{ 
+        //    audioSource.Play();
+        //}
+    }
     private void RocketNoiseOn()
     {
         if (!audioSource.isPlaying)//So it doesn't layer

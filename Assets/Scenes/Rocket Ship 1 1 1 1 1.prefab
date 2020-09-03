@@ -140,13 +140,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317902698205802231}
   serializedVersion: 2
-  m_Mass: 0.45
-  m_Drag: 0
+  m_Mass: 0.6
+  m_Drag: 0.35
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!82 &1317902698205802229
 AudioSource:
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 8246016152946230780}
   - component: {fileID: 8950880783688434707}
   - component: {fileID: 8384067303980154928}
-  - component: {fileID: 5247081883317850129}
+  - component: {fileID: 5889948676627797804}
   m_Layer: 0
   m_Name: Cockpit
   m_TagString: Untagged
@@ -338,8 +338,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5247081883317850129
-SphereCollider:
+--- !u!64 &5889948676627797804
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -348,9 +348,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2557418735703945112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1168,7 @@ GameObject:
   - component: {fileID: 6696068333004605098}
   - component: {fileID: 776105004013021042}
   - component: {fileID: 283930128072513138}
-  - component: {fileID: 5661382078925369108}
+  - component: {fileID: 5063452917013268993}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1238,8 +1239,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5661382078925369108
-SphereCollider:
+--- !u!64 &5063452917013268993
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1248,9 +1249,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &8107413028983459239
 GameObject:
   m_ObjectHideFlags: 0

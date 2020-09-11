@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8740085430439126586}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 4, y: 0.25, z: 4}
   m_Children: []
   m_Father: {fileID: 3811858987928660415}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5930601545615503068
 MeshFilter:
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8912934746647046104}
   - component: {fileID: 7190232860707863109}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Top Platform
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ Transform:
   m_LocalScale: {x: 4, y: 0.2505775, z: 4}
   m_Children: []
   m_Father: {fileID: 3811858987928660415}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2173929440488059495
 MeshFilter:
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 6063373303850996509}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 3766285566653268500}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 4998304710865891864}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -399,7 +399,7 @@ Transform:
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 3811858987928660415}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4998304710865891866
 MeshFilter:
@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 4998304711056528965}
   m_Layer: 0
   m_Name: Cylinder (3)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -495,7 +495,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 2, z: 3}
   m_Children: []
   m_Father: {fileID: 3811858987928660415}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4998304711056528967
 MeshFilter:
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 4998304711603327958}
   m_Layer: 0
   m_Name: Capsule (1)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -670,7 +670,7 @@ GameObject:
   - component: {fileID: 4998304711690226862}
   m_Layer: 0
   m_Name: Cylinder (5)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 4998304712032219160}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -783,7 +783,7 @@ Transform:
   m_LocalScale: {x: 3, y: 2, z: 0.5}
   m_Children: []
   m_Father: {fileID: 3811858987928660415}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4998304712032219162
 MeshFilter:
@@ -862,7 +862,7 @@ GameObject:
   - component: {fileID: 4998304712298817252}
   m_Layer: 0
   m_Name: Sphere (2)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 4998304712334035021}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -974,7 +974,7 @@ Transform:
   m_LocalScale: {x: 3, y: 2, z: 0.5}
   m_Children: []
   m_Father: {fileID: 3811858987928660415}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4998304712334035023
 MeshFilter:
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 4998304712431757982}
   m_Layer: 0
   m_Name: Capsule (2)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 4998304712612522605}
   m_Layer: 0
   m_Name: Cylinder (4)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1151,7 +1151,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 2, z: 3}
   m_Children: []
   m_Father: {fileID: 3811858987928660415}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4998304712612522607
 MeshFilter:
@@ -1230,7 +1230,7 @@ GameObject:
   - component: {fileID: 4998304712627845123}
   m_Layer: 0
   m_Name: Sphere (1)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1324,7 +1324,7 @@ GameObject:
   - component: {fileID: 4998304712635867230}
   m_Layer: 0
   m_Name: Cylinder (6)
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1419,13 +1419,13 @@ Transform:
   m_LocalPosition: {x: 41.75, y: 4.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 6067435324994443728}
   - {fileID: 4998304712334035024}
   - {fileID: 4998304712032219163}
   - {fileID: 4998304711056528968}
   - {fileID: 4998304712612522608}
   - {fileID: 4998304710865891867}
   - {fileID: 4549972405925452549}
-  - {fileID: 6067435324994443728}
   - {fileID: 4998304711603327961}
   - {fileID: 4998304711690226865}
   - {fileID: 4998304712627845126}
